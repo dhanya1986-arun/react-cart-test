@@ -1,0 +1,75 @@
+.navbar {
+  background-color: #3f51b5; /* Blue background for the navbar */
+  padding: 10px;
+}
+
+.title {
+  flex-grow: 1;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+/* Search Box Styling */
+.searchBox {
+  display: flex;
+  align-items: center;
+  background-color: #5c6bc0; /* Lighter blue than navbar */
+  padding: 5px 10px;
+  border-radius: 4px;
+  width: 400px; /* Make the search box wider */
+  height: 35px; /* Minimize the height */
+  margin-left: auto; /* Move it towards the center by auto margin */
+  margin-right: 20px; /* Adjust for balance */
+  color: white;
+}
+
+.searchIcon {
+  margin-right: 10px; /* Space between icon and input field */
+  color: rgba(255, 255, 255, 0.7); /* Lighter color for the icon */
+}
+
+.searchInput {
+  flex-grow: 1;
+  color: white;
+  border: none;
+  outline: none;
+  background-color: transparent; /* Transparent background inside the box */
+  font-size: 16px;
+}
+
+.searchInput::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Lighter placeholder text */
+}
+
+/* Links and button styling */
+.navLink {
+  text-decoration: underline;
+  color: white;
+  margin-right: 15px;
+}
+
+.logoutButton {
+  background-color: #ff4081;
+  color: white !important;
+  padding: 5px 15px;
+  border-radius: 4px;
+  text-decoration: underline;
+  border: none;
+}
+
+.logoutButton:hover {
+  background-color: #f50057 !important; /* Red hover for Logout button */
+  color: white !important;
+}
+
+button:not(.logoutButton):hover, .MuiButton-root:not(.logoutButton):hover {
+  background-color: #1e3a8a; /* Blue color on hover for other buttons */
+  color: white;
+  text-decoration: underline;
+}
+
+button:focus, .MuiButton-root:focus {
+  outline: none;
+}
